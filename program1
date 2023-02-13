@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a[100],b,c,i,j,num;
+    cout<<"Input number of test cases"<<endl;
+    cin>>b;
+    for(i=0;i<b;i++)
+    {
+        cout<<"Input number of elements in array"<<endl;
+        cin>>c;
+        cout<<"Input elements in array"<<endl;
+        for(j=1;j<=c;j++)
+        {
+            cin>>a[j];
+        }
+        cout<<"Input element to search"<<endl;
+        cin>>num;
+        for(j=1;j<=c;j++)
+        {
+            if(a[j]==num)
+            {
+                cout<<"Present"<<j<<endl;
+            }
+            else if(a[j]!=num&&j>c)
+            {
+                cout<<"Not present"<<j<<endl;
+            }
+        }
+    }
+}
+
+
